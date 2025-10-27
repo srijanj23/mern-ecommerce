@@ -7,7 +7,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect("mongodb://localhost:27017/mern-ecommerce")
+mongoose.connect("mongodb+srv://jvpthn_db_user:xyad0OmtDmOnhi3P@cluster0.fwx9j42.mongodb.net/mern-ecommerce?retryWrites=true&w=majority")
+
     .then(() => console.log('MongoDB connected'))
     .catch(err => {
         console.error(err.message);
